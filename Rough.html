@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        form {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function validateNumber() {
+            // apun yeah line se input le rahe hai html to JS
+            var userInput = document.getElementById("numberInput").value;
+
+            // YEha woh + - hai yeah nhi check kare ga
+            if (/^[+-]?\d+(\.\d+)?$/.test(userInput)) {
+
+                alert("You have entered a valid number");
+            } else {
+                alert("You have entered an invalid number");
+            }
+        }
+    </script>
+
+    <form id="numberForm"></form>
+        <label for="numberInput">Enter karo:</label>
+        <input type="text" id="numberInput"  placeholder="Enter a number">
+
+        <!-- yeah line mai joh on click hai uski madat se yeah JS pe jaa raha hai -->
+        <!-- dekna validateNumber() dono jagah same hai  -->
+        <button type="button" onclick="validateNumber()">Submit</button>
+    </form>
+
+
+</body>
+</html>

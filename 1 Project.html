@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+</head>
+<link rel="stylesheet" href="1 project.css">
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        /* background: url("img/1\ IMAGE.jpg"); */
+        height: 3654px;
+        background: linear-gradient(to right ,#0ffafa, #00ff0094, #3ee287);
+}
+        
+    
+
+    .left {
+        /* border: 5px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 44px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 65px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+
+    .mid {
+        /* border: 5px solid rgb(223, 238, 6); */
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+
+    }
+
+    .right {
+        /* border: 5px solid lawngreen; */
+        display: inline-block;
+        right: 34px;
+        top: 20px;
+        position: absolute;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+        
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 30px 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: darkgray;
+    }
+
+    .btn {
+        margin: 15px 10px;
+        background-color: transparent;
+        border: 3px solid black;
+        font-size: medium;
+        padding: 3px 4px;
+        border-radius: 15px;
+
+    }
+
+    .btn:hover {
+        text-decoration: underline;
+        color: gainsboro;
+        border: 3px solid gainsboro;
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+
+    .container {
+        border: 5px solid whitesmoke;
+        margin: 85px 45px;
+        margin: auto;
+        padding: 36px 36px;
+        border-radius: 20px;
+        width: 35%;
+        box-shadow: 0 0 10px rgb(32, 207, 70); 
+        
+        
+    }
+
+    .form-enter input{
+
+        display: block;
+        text-align: center;
+        width: 350px;
+        border: 3px solid rgb(61, 105, 181);
+        margin: 5px auto;
+        padding: 7px;
+        border-radius: 8px;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        margin: 20px auto;
+        width: 65%;
+        padding: 8px;
+    }
+
+    .container input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+</style>
+
+<body>
+    <!-- header section start -->
+    <header class="header">
+        <!-- left div for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div style="color: lawngreen;font-size: large;">Nature</div>
+
+        </div>
+        <!-- mid div for navigathion -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact US</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+
+        </div>
+        <!-- right div for button -->
+        <div class="right">
+            <button class="btn">Contact for help
+
+            </button><button class="btn">Email for Help</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h2>Let's Feel the Ocean</h2>
+
+        <form action="NoNo.php">
+            <div class="form-enter">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+
+            <div class="form-enter">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+
+            <div class="form-enter">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-enter">
+                <input type="text" name="" placeholder="Place want to Visit">
+            </div>
+            <button class="btn" >Submit</button>
+        </form>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
